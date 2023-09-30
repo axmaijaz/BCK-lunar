@@ -1,0 +1,35 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+        # Modify this branch to match your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+    #   with:
+    #     dotnet-version: '6.0'  # Modify this to the desired .NET Core version
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --configuration Release
+
+    - name: Test
+      run: dotnet test --configuration Release --no-restore
+
+    - name: Publish Artifact
+      if: success()
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-artifact
+        path: ./lunar-bck-App/bin/Debug/net7.0/

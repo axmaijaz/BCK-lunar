@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\bin\Debug\net7.0\lunar-bck-App.exe
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\bin\Debug\net7.0\lunar-bck-App.deps.json
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\bin\Debug\net7.0\lunar-bck-App.runtimeconfig.json
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\bin\Debug\net7.0\lunar-bck-App.dll
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\bin\Debug\net7.0\lunar-bck-App.pdb
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.AssemblyInfo.cs
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.dll
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\refint\lunar-bck-App.dll
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.pdb
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\lunar-bck-App.genruntimeconfig.cache
+C:\Users\User\Desktop\.net-core-app\lunar-bck-App\obj\Debug\net7.0\ref\lunar-bck-App.dll
