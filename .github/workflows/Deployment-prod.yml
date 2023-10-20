@@ -1,0 +1,58 @@
+name: Deployment Pipeline
+
+on:
+   workflow_run:
+        workflows: ["Frontend Build-Only Pipeline"] 
+        types:
+            - completed
+   pull_request:
+        types:
+            - closed
+
+   workflow_dispatch:
+       inputs:
+        production_approval:
+            description: 'Approve Production Deployment'
+            required: true
+            default: 'false'
+env:    
+      EB_PACKAGE_S3_BUCKET_NAME : "ebs-bucket-asma"
+      EB_APPLICATION_NAME       : "dotnet-app"
+      EB_ENVIRONMENT_NAME       : "Dotnetapp-env"
+      DEPLOY_PACKAGE_NAME       : "dotnet-app-${{ github.sha }}.zip"
+      AWS_REGION_NAME           : "af-south-1"
+
+jobs:
+    deploy_staging:
+        name: Deploy to Staging
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+
+        # Add your build and deployment steps for staging here.
+        # For example:
+        - name: Build and Deploy Staging
+          run:  echo "Building and deploying to Staging environment..."
+
+       
+
+
+    deploy_production:
+        name: Deploy to Production (Manual Approval)
+        runs-on: ubuntu-latest
+        needs: [deploy_staging]
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.production_approval == 'true'
+
+        steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+
+        # Add your deployment steps for production here.
+        # For example:
+        - name: Deploy Production
+          run: echo "Deploying to production environment ..."
+
+
+
