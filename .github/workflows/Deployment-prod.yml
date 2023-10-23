@@ -2,7 +2,7 @@ name: Deployment Pipeline
 
 on:
    workflow_run:
-        workflows: ["Frontend Build-Only Pipeline"] 
+        workflows: ["Build and Test"] 
         types:
             - completed
    pull_request:
