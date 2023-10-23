@@ -2,7 +2,7 @@ name: Deployment Pipeline
 
 on:
    workflow_run:
-        workflows: ["Build and Test"] 
+        workflows: ["Build and test"] 
         types:
             - completed
    pull_request:
