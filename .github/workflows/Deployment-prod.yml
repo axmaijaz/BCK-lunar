@@ -37,8 +37,6 @@ jobs:
           run:  echo "Building and deploying to Staging environment..."
 
        
-
-
     deploy_production:
         name: Deploy to Production (Manual Approval)
         runs-on: ubuntu-latest
