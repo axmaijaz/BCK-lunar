@@ -22,7 +22,7 @@ env:
       EB_APPLICATION_NAME       : "dotnet-app"
       EB_ENVIRONMENT_NAME       : "Dotnetapp-env"
       DEPLOY_PACKAGE_NAME       : "dotnet-app-${{ github.sha }}.zip"
-      AWS_REGION_NAME           : "af-south-1"
+      AWS_REGION_NAME           : "us-east-1"
 
 jobs:       
   deploy_staging:
@@ -61,19 +61,3 @@ jobs:
              echo 'Deployment to AWS Elastic Beanstalk complete.'
 
   deploy_production:
-        name: Deploy to Production (Manual Approval)
-        runs-on: ubuntu-latest
-        needs: [deploy_staging]
-        if: github.event_name == 'workflow_dispatch' && github.event.inputs.production_approval == 'true'
-
-        steps:
-        - name: Checkout Repository
-          uses: actions/checkout@v2
-
-        # Add your deployment steps for production here.
-        # For example:
-        - name: Deploy Production
-          run: echo "Deploying to production environment ..."
-
-
-
