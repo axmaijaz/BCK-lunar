@@ -1,0 +1,5 @@
+C:\Users\User\Desktop\BCK-lunar\bin\Debug\net7.0\publish\lunar-bck-App.exe
+C:\Users\User\Desktop\BCK-lunar\bin\Debug\net7.0\publish\lunar-bck-App.dll
+C:\Users\User\Desktop\BCK-lunar\bin\Debug\net7.0\publish\lunar-bck-App.deps.json
+C:\Users\User\Desktop\BCK-lunar\bin\Debug\net7.0\publish\lunar-bck-App.runtimeconfig.json
+C:\Users\User\Desktop\BCK-lunar\bin\Debug\net7.0\publish\lunar-bck-App.pdb

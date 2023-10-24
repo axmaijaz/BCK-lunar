@@ -3,9 +3,6 @@ name: Build and Test
 on:
   push:
     
-env:
-  DEPLOY_PACKAGE_NAME       : "dotnet-app-${{ github.sha }}.zip"
-  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,7 +24,6 @@ jobs:
 
     - name: Test
       run: dotnet test --configuration Release --no-restore
-
 
     - name: Zip Package
       run: |       
